@@ -87,9 +87,9 @@ app.get("/address", async (req, res) => {
 
    return res.status(200).json({ status: 200, message: true, data: data });
 });
-
+const port = process.env.PORT || 5000
 // Start server with port 3000
-app.listen(3000, function () {
+app.listen(port, function () {
    console.log("Server started on localhost:9999");
 });
 
